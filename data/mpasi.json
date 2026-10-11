@@ -1,0 +1,63 @@
+{
+  "sumber": "Kementerian Kesehatan RI (Buku KIA) & Ikatan Dokter Anak Indonesia (IDAI)",
+  "judul": "Panduan Praktis Pemberian Makanan Pendamping ASI (MPASI)",
+  "prinsipUtama": [
+    "Tepat waktu: Diberikan saat bayi berusia genap 6 bulan (180 hari), ketika ASI saja sudah tidak mencukupi kebutuhan nutrisi.",
+    "Adekuat: Memenuhi kebutuhan makronutrien (karbohidrat, lemak) dan mikronutrien (terutama Protein Hewani dan Zat Besi).",
+    "Aman dan Higienis: Proses penyiapan, memasak, dan penyimpanan bersih.",
+    "Responsive Feeding: Memberi makan dengan penuh kasih sayang, tanggap terhadap sinyal lapar dan kenyang si kecil, tanpa paksaan."
+  ],
+  "tahapan": [
+    {
+      "rentangUsia": "6 - 8 bulan",
+      "usiaMinBulan": 6,
+      "usiaMaxBulan": 8,
+      "tekstur": "Makanan lumat kental (puree) atau disaring (mashed). Tidak boleh terlalu encer agar cukup kalori (tolok ukur: saat sendok dimiringkan, makanan tidak langsung tumpah encer).",
+      "porsiPerMakan": "Mulai dari 2 - 3 sendok makan dewasa secara bertahap hingga 1/2 mangkuk ukuran 250 ml.",
+      "frekuensi": "2 - 3 kali makan utama sehari, ditambah 1 - 2 kali makanan selingan (snack sehat), serta ASI tetap diberikan semau bayi.",
+      "komposisiWajib": "Menu 4 bintang lengkap di setiap kali makan (utamakan Protein Hewani tinggi zat besi + Karbohidrat + Lemak Tambahan + sedikit serat/sayur).",
+      "contohMenu": [
+        "Bubur beras + hati ayam + wortel lumat + minyak kelapa / santan.",
+        "Bubur kentang + daging sapi cincang halus + labu siam + mentega.",
+        "Bubur ikan kembung + tahu sutra + bayam lumat + minyak sayur."
+      ],
+      "fingerFood": "Belum direkomendasikan finger food kasar; bisa potongan buah sangat lunak (alpukat matang) mulai usia 7-8 bulan dengan pengawasan penuh."
+    },
+    {
+      "rentangUsia": "9 - 11 bulan",
+      "usiaMinBulan": 9,
+      "usiaMaxBulan": 11,
+      "tekstur": "Makanan lembek, dicincang halus (minced), atau dicincang kasar (chopped). Mulai naik tekstur secara bertahap untuk menstimulasi pertumbuhan gigi dan kemampuan motorik oral.",
+      "porsiPerMakan": "1/2 hingga 3/4 mangkuk ukuran 250 ml per kali makan.",
+      "frekuensi": "3 - 4 kali makan utama per hari, ditambah 1 - 2 kali makanan selingan, serta ASI tetap diberikan.",
+      "komposisiWajib": "Menu lengkap gizi seimbang dengan fokus variasi protein hewani (ayam, telur, ikan, daging sapi/kambing).",
+      "contohMenu": [
+        "Nasi tim ayam cincang + telur orak-arik + brokoli potong kecil + kaldu minyak ayam.",
+        "Nasi lembek semur daging sapi giling + tahu cincang + wortel kukus cincang.",
+        "Bubur kasar ikan tongkol / salmon + tempe lumat + santan gurih."
+      ],
+      "fingerFood": "Sangat dianjurkan: potongan buah lunak (pisang, pepaya, mangga manis), perkedel kentang ayam panggang mini, telur rebus iris tipis."
+    },
+    {
+      "rentangUsia": "12 - 23 bulan (1 - 2 tahun)",
+      "usiaMinBulan": 12,
+      "usiaMaxBulan": 23,
+      "tekstur": "Makanan keluarga (family food) yang diiris atau dipotong sesuai kemampuan mengunyah anak. Sudah tidak perlu disaring.",
+      "porsiPerMakan": "3/4 hingga 1 mangkuk penuh ukuran 250 ml per kali makan.",
+      "frekuensi": "3 - 4 kali makan makanan keluarga per hari, ditambah 1 - 2 kali makanan selingan sehat.",
+      "komposisiWajib": "Sama dengan makanan orang dewasa di rumah, namun hindari bumbu penyedap instan yang berlebihan, hindari makanan terlalu pedas, dan pastikan tekstur daging tidak terlalu alot.",
+      "contohMenu": [
+        "Nasi keluarga + sop ayam wortel kentang + perkedel tahu + telur dadar.",
+        "Nasi + ikan goreng kembung suwir + tumis labu siam manis + tempe bacem lembut.",
+        "Nasi + rolade daging sapi + kuah bening bayam jagung manis."
+      ],
+      "fingerFood": "Potongan buah segar, pancake pisang gandum mini, bakso ikan/ayam homemade lunak."
+    }
+  ],
+  "pantanganDanPeringatan": [
+    "DILARANG memberikan madu pada bayi usia di bawah 1 tahun karena risiko keracunan Clostridium botulinum (botulisme infantil) yang mematikan.",
+    "Hindari makanan bulat, keras, dan licin tanpa dipotong (anggur utuh, kacang utuh, sosis bulat) karena risiko fatal tersedak (choking).",
+    "Gula dan garam sebaiknya sangat dibatasi pada usia di bawah 1 tahun untuk menjaga kesehatan ginjal bayi dan mencegah preferensi rasa manis berlebih.",
+    "Susu sapi murni (UHT/pasteurisasi/segar) tidak boleh menggantikan ASI/formula sebagai minuman utama sebelum usia 1 tahun, hanya boleh sebagai campuran masakan."
+  ]
+}

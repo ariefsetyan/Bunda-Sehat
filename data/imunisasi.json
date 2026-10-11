@@ -1,0 +1,187 @@
+{
+  "sumber": "Kementerian Kesehatan Republik Indonesia (Kemenkes RI) & Ikatan Dokter Anak Indonesia (IDAI)",
+  "versi": "Jadwal Imunisasi Program Nasional",
+  "kategori": "Imunisasi Dasar & Lanjutan Lengkap (0 - 18 Bulan)",
+  "daftar": [
+    {
+      "id": "hb0",
+      "usiaBulan": 0,
+      "namaVaksin": "Hepatitis B (HB-0)",
+      "jadwalTeks": "Usia 0 bulan (kurang dari 24 jam setelah lahir)",
+      "mencegah": "Infeksi virus Hepatitis B yang dapat menyebabkan kerusakan hati dan kanker hati kronis.",
+      "caraPemberian": "Suntikan intramuskular di paha kanan luar",
+      "catatan": "Wajib diberikan segera sebelum bayi berumur 24 jam setelah pemberian Vitamin K1."
+    },
+    {
+      "id": "bcg",
+      "usiaBulan": 1,
+      "namaVaksin": "BCG",
+      "jadwalTeks": "Usia 1 bulan",
+      "mencegah": "Tuberkulosis (TBC) berat, termasuk meningitis TBC dan TBC milier.",
+      "caraPemberian": "Suntikan intrakutan di lengan kanan atas",
+      "catatan": "Umumnya menimbulkan bekas luka parut kecil (scar) setelah beberapa minggu, hal ini normal."
+    },
+    {
+      "id": "opv1",
+      "usiaBulan": 1,
+      "namaVaksin": "Polio Tetes 1 (bOPV 1)",
+      "jadwalTeks": "Usia 1 bulan",
+      "mencegah": "Penyakit Polio yang menyebabkan kelumpuhan layu akut permanen.",
+      "caraPemberian": "Diteteskan ke dalam mulut (oral)",
+      "catatan": "Diberikan bersamaan dengan vaksin BCG."
+    },
+    {
+      "id": "dpt_hb_hib_1",
+      "usiaBulan": 2,
+      "namaVaksin": "DPT-HB-Hib 1 (Pentabio)",
+      "jadwalTeks": "Usia 2 bulan",
+      "mencegah": "Difteri, Pertusis (batuk rejan), Tetanus, Hepatitis B, serta infeksi Haemophilus influenzae tipe b (radang paru dan radang selaput otak).",
+      "caraPemberian": "Suntikan intramuskular di paha kiri luar",
+      "catatan": "Bisa menimbulkan demam ringan pasca imunisasi; berikan ASI lebih sering dan kompres hangat bila perlu."
+    },
+    {
+      "id": "opv2",
+      "usiaBulan": 2,
+      "namaVaksin": "Polio Tetes 2 (bOPV 2)",
+      "jadwalTeks": "Usia 2 bulan",
+      "mencegah": "Penyakit Polio tipe 1 dan 3.",
+      "caraPemberian": "Diteteskan ke dalam mulut (oral)",
+      "catatan": "Diberikan bersamaan dengan DPT-HB-Hib 1."
+    },
+    {
+      "id": "pcv1",
+      "usiaBulan": 2,
+      "namaVaksin": "PCV 1 (Pneumokokus)",
+      "jadwalTeks": "Usia 2 bulan",
+      "mencegah": "Pneumonia (radang paru-paru) dan meningitis akibat bakteri Streptococcus pneumoniae.",
+      "caraPemberian": "Suntikan intramuskular di paha",
+      "catatan": "Program imunisasi nasional Kemenkes untuk mencegah kematian balita akibat radang paru."
+    },
+    {
+      "id": "rv1",
+      "usiaBulan": 2,
+      "namaVaksin": "Rotavirus 1 (RV 1)",
+      "jadwalTeks": "Usia 2 bulan",
+      "mencegah": "Diare cair akut berat akibat infeksi Rotavirus yang berisiko dehidrasi fatal.",
+      "caraPemberian": "Diteteskan ke mulut (oral)",
+      "catatan": "Diberikan dengan jarak minimal 4 minggu dari dosis berikutnya."
+    },
+    {
+      "id": "dpt_hb_hib_2",
+      "usiaBulan": 3,
+      "namaVaksin": "DPT-HB-Hib 2",
+      "jadwalTeks": "Usia 3 bulan",
+      "mencegah": "Lanjutan perlindungan terhadap Difteri, Pertusis, Tetanus, Hepatitis B, dan Hib.",
+      "caraPemberian": "Suntikan intramuskular di paha",
+      "catatan": "Dosis kedua untuk memperkuat antibodi."
+    },
+    {
+      "id": "opv3",
+      "usiaBulan": 3,
+      "namaVaksin": "Polio Tetes 3 (bOPV 3)",
+      "jadwalTeks": "Usia 3 bulan",
+      "mencegah": "Penyakit Polio.",
+      "caraPemberian": "Diteteskan ke dalam mulut (oral)",
+      "catatan": "Diberikan bersamaan dengan DPT-HB-Hib 2."
+    },
+    {
+      "id": "pcv2",
+      "usiaBulan": 3,
+      "namaVaksin": "PCV 2",
+      "jadwalTeks": "Usia 3 bulan",
+      "mencegah": "Pneumonia dan infeksi pneumokokus.",
+      "caraPemberian": "Suntikan intramuskular di paha",
+      "catatan": "Dosis kedua vaksin PCV."
+    },
+    {
+      "id": "rv2",
+      "usiaBulan": 3,
+      "namaVaksin": "Rotavirus 2 (RV 2)",
+      "jadwalTeks": "Usia 3 bulan",
+      "mencegah": "Diare akut rotavirus.",
+      "caraPemberian": "Diteteskan ke dalam mulut (oral)",
+      "catatan": "Dosis kedua vaksin Rotavirus."
+    },
+    {
+      "id": "dpt_hb_hib_3",
+      "usiaBulan": 4,
+      "namaVaksin": "DPT-HB-Hib 3",
+      "jadwalTeks": "Usia 4 bulan",
+      "mencegah": "Dosis ketiga lengkap primer DPT, Hepatitis B, dan Hib.",
+      "caraPemberian": "Suntikan intramuskular di paha",
+      "catatan": "Menuntaskan dosis primer imunisasi pentavalen."
+    },
+    {
+      "id": "opv4",
+      "usiaBulan": 4,
+      "namaVaksin": "Polio Tetes 4 (bOPV 4)",
+      "jadwalTeks": "Usia 4 bulan",
+      "mencegah": "Penyakit Polio.",
+      "caraPemberian": "Diteteskan ke dalam mulut (oral)",
+      "catatan": "Dosis keempat polio tetes."
+    },
+    {
+      "id": "ipv1",
+      "usiaBulan": 4,
+      "namaVaksin": "Polio Suntik 1 (IPV 1)",
+      "jadwalTeks": "Usia 4 bulan",
+      "mencegah": "Perlindungan optimal terhadap seluruh tipe virus Polio (tipe 1, 2, dan 3).",
+      "caraPemberian": "Suntikan intramuskular di paha",
+      "catatan": "Sangat penting untuk membentuk kekebalan serum darah yang kuat terhadap virus polio tipe 2."
+    },
+    {
+      "id": "rv3",
+      "usiaBulan": 4,
+      "namaVaksin": "Rotavirus 3 (RV 3)",
+      "jadwalTeks": "Usia 4 bulan",
+      "mencegah": "Diare akut rotavirus.",
+      "caraPemberian": "Diteteskan ke dalam mulut (oral)",
+      "catatan": "Dosis penutup untuk vaksin rotavirus tipe 3 dosis (harus selesai sebelum usia 6 bulan)."
+    },
+    {
+      "id": "mr1",
+      "usiaBulan": 9,
+      "namaVaksin": "Campak-Rubella 1 (MR 1)",
+      "jadwalTeks": "Usia 9 bulan",
+      "mencegah": "Campak (morbili) yang dapat menyebabkan radang paru berat, serta Rubella yang memicu sindrom rubella bawaan.",
+      "caraPemberian": "Suntikan subkutan di lengan kiri atas",
+      "catatan": "Salah satu imunisasi dasar penutup yang sangat krusial sebelum usia 1 tahun."
+    },
+    {
+      "id": "ipv2",
+      "usiaBulan": 9,
+      "namaVaksin": "Polio Suntik 2 (IPV 2)",
+      "jadwalTeks": "Usia 9 bulan",
+      "mencegah": "Penguatan kekebalan terhadap semua jenis virus Polio.",
+      "caraPemberian": "Suntikan intramuskular di paha",
+      "catatan": "Program penambahan dosis kedua IPV oleh Kemenkes RI."
+    },
+    {
+      "id": "pcv3",
+      "usiaBulan": 12,
+      "namaVaksin": "PCV 3 (Booster Lanjutan)",
+      "jadwalTeks": "Usia 12 bulan",
+      "mencegah": "Penguatan kekebalan jangka panjang terhadap bakteri Pneumokokus.",
+      "caraPemberian": "Suntikan intramuskular di lengan atau paha",
+      "catatan": "Diberikan setelah anak berusia 12 bulan sebagai penguat dosis PCV 1 & 2."
+    },
+    {
+      "id": "dpt_hb_hib_4",
+      "usiaBulan": 18,
+      "namaVaksin": "DPT-HB-Hib 4 (Booster Lanjutan)",
+      "jadwalTeks": "Usia 18 bulan",
+      "mencegah": "Booster daya tahan terhadap Difteri, Pertusis, Tetanus, Hepatitis B, dan Hib pada masa batita.",
+      "caraPemberian": "Suntikan intramuskular di lengan atas atau paha",
+      "catatan": "Memperpanjang durasi kekebalan hingga usia prasekolah."
+    },
+    {
+      "id": "mr2",
+      "usiaBulan": 18,
+      "namaVaksin": "Campak-Rubella 2 (MR 2 / Booster)",
+      "jadwalTeks": "Usia 18 bulan",
+      "mencegah": "Booster kekebalan terhadap Campak dan Rubella.",
+      "caraPemberian": "Suntikan subkutan di lengan kiri atas",
+      "catatan": "Menyempurnakan perlindungan dasar MR pada usia 9 bulan."
+    }
+  ]
+}

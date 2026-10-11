@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunda Sehat — Asisten Edukasi Kesehatan Ibu & Anak</title>
+  <meta name="description" content="Chatbot AI pintar untuk edukasi kesehatan ibu dan anak, jadwal imunisasi akurat, panduan MPASI, dan tanda bahaya kehamilan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="avatar-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+        </div>
+        <div class="header-titles">
+          <h1 class="brand-title">Bunda Sehat</h1>
+          <p class="brand-subtitle">Asisten AI Edukasi Kesehatan Ibu & Anak</p>
+        </div>
+      </div>
+      
+      <div class="header-right">
+        <!-- Tone Selector -->
+        <div class="tone-toggle" title="Pilih gaya bicara chatbot">
+          <label for="toneSelect" class="tone-label">Gaya:</label>
+          <select id="toneSelect" class="tone-dropdown">
+            <option value="santai" selected>Santai & Hangat</option>
+            <option value="formal">Formal & Terstruktur</option>
+          </select>
+        </div>
+        <button id="clearChatBtn" class="btn-icon" title="Hapus riwayat chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Session Memory Indicator Bar -->
+    <div id="sessionProfileBar" class="session-profile-bar hidden">
+      <div class="profile-bar-inner">
+        <span class="profile-pill-icon">👶</span>
+        <span id="sessionProfileText" class="profile-pill-text">Profil: Memuat...</span>
+        <button id="resetProfileBtn" class="profile-pill-btn" title="Lupakan profil anak">Lupakan</button>
+      </div>
+    </div>
+
+    <!-- API Key Notice Banner (Conditional) -->
+    <div id="apiKeyBanner" class="api-notice-banner hidden">
+      <div class="banner-content">
+        <span class="banner-icon">⚠️</span>
+        <span id="apiKeyBannerText">API Key Gemini belum disetel di file <code>.env</code>. Chatbot berjalan dalam mode demo/terbatas.</span>
+      </div>
+    </div>
+
+    <!-- Main Chat Window -->
+    <main class="chat-main" id="chatWindow">
+      <!-- Welcome Card -->
+      <div class="welcome-card" id="welcomeCard">
+        <div class="welcome-icon-wrapper">
+          <span class="welcome-emoji">🌸</span>
+        </div>
+        <h2>Halo, Bunda & Ayah!</h2>
+        <p>Saya <strong>Bunda Sehat</strong>, siap menemani Anda berdiskusi seputar kesehatan kehamilan, tumbuh kembang si kecil, jadwal imunisasi, dan MPASI.</p>
+        
+        <div class="quick-prompts-label">Coba tanyakan hal ini:</div>
+        <div class="quick-prompts">
+          <button class="prompt-chip" data-query="Apa saja tanda bahaya kehamilan yang perlu segera ke IGD?">
+            🚨 Tanda bahaya kehamilan
+          </button>
+          <button class="prompt-chip" data-query="Kapan bayi mulai boleh makan MPASI dan apa tekstur pertamanya?">
+            🥣 Tekstur pertama MPASI
+          </button>
+          <button class="prompt-chip" data-query="Kenapa imunisasi pada bayi itu sangat penting?">
+            💉 Pentingnya imunisasi bayi
+          </button>
+          <button class="prompt-chip" data-query="Bagaimana cara mengatasi bayi demam setelah imunisasi?">
+            🌡️ Demam pasca imunisasi
+          </button>
+        </div>
+
+        <div class="disclaimer-badge">
+          ℹ️ <strong>Prinsip:</strong> Informasi bersifat edukasi dan bukan pengganti diagnosis medis. Selalu konsultasikan kondisi si kecil ke dokter atau bidan.
+        </div>
+      </div>
+
+      <!-- Messages container -->
+      <div class="messages-list" id="messagesList"></div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator hidden" id="typingIndicator">
+        <div class="bot-avatar-mini">🌸</div>
+        <div class="typing-bubble">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Input Bar -->
+    <footer class="app-footer">
+      <form id="chatForm" class="chat-form">
+        <div class="input-wrapper">
+          <textarea 
+            id="chatInput" 
+            class="chat-input" 
+            placeholder="Tanyakan seputar kehamilan, bayi, atau imunisasi..." 
+            rows="1" 
+            required
+          ></textarea>
+          <button type="submit" id="sendBtn" class="send-btn" title="Kirim pesan">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m22 2-7 20-4-9-9-4Z"/>
+              <path d="M22 2 11 13"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div class="footer-note">
+        Bunda Sehat • Edukasi Kesehatan Ibu & Anak • Powered by Google Gemini
+      </div>
+    </footer>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
